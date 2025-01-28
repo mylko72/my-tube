@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState, useRef } from 'react';
+import { CiSearch } from "react-icons/ci";
 import { PiYoutubeLogoLight } from "react-icons/pi";
 import { Link } from 'react-router-dom';
 
@@ -34,7 +35,7 @@ export default function SearchHeader({ searchWord, onSubmit }){
                         onBlur={() => inputRef.current.value = keyword}
                         onChange={(e) => setKeyword(e.target.value)}
                     />
-                    <button type="submit" onClick={handleSubmit} className="border-l w-1/6 border-gray-500"><span className="text-white">Search</span></button>
+                    <button type="submit" onClick={handleSubmit} className="flex border-l w-1/6 border-gray-500"><CiSearch className="m-auto text-2xl text-white" /></button>
                 </form>
             </div>
         </div>
