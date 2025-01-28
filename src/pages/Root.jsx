@@ -8,7 +8,7 @@ const queryClient = new QueryClient();
 
 export default function Root(){
     const navigate = useNavigate();
-    const [searchWord, setSearchWord] = useState('');
+    const [searchWord, setSearchWord] = useState('베스트 뮤직비디오');
     const [videoData, setVideoData] = useState([]);
 
     const handleSubmit = (keyword) => {
